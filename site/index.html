@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>exparte: Medicaid renewal decisions with the rule text attached</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>exparte</h1>
+  <p>Pick a renewal case or edit the JSON. The engine runs in this page; nothing is sent anywhere. Cases are made up.</p>
+</header>
+<main>
+  <section class="left">
+    <label>Case <select id="pick"></select></label>
+    <div class="row">
+      <label>Months required <input id="months" type="number" min="1" max="6" value="1"></label>
+      <label><input id="snap" type="checkbox" checked> use SNAP/TANF case data</label>
+      <label><input id="hard" type="checkbox" checked> hardship option</label>
+    </div>
+    <p id="basis"></p>
+    <textarea id="json" spellcheck="false"></textarea>
+    <p id="err"></p>
+  </section>
+  <section class="right">
+    <div id="summary"></div>
+    <ol id="trace"></ol>
+  </section>
+</main>
+<footer>Rules: 42 CFR 435 (eCFR, 2026-11-01) and Pub. L. 119-21 sec. 71107 / 71119. Not legal advice. <a href="https://github.com/tahakocp/exparte">Source</a></footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>

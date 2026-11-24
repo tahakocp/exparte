@@ -1,0 +1,31 @@
+:root { --ink: #1d2433; --mute: #5b6475; --line: #d9dde5; --ok: #1f7a4d; --bad: #b3261e; --unk: #9a6700; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: #f6f7f9; }
+header, footer { padding: 14px 24px; }
+header h1 { margin: 0 0 4px; font-size: 22px; }
+header p, footer { color: var(--mute); margin: 0; font-size: 13px; }
+main { display: grid; grid-template-columns: minmax(320px, 1fr) 1.4fr; gap: 18px; padding: 0 24px; }
+section { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 14px; min-width: 0; }
+.row { display: flex; gap: 14px; flex-wrap: wrap; margin: 10px 0; font-size: 13px; }
+select, input[type=number] { font: inherit; padding: 3px 6px; }
+input[type=number] { width: 4em; }
+#basis { color: var(--mute); font-size: 13px; margin: 6px 0; }
+textarea { width: 100%; height: 440px; font: 12px/1.4 ui-monospace, Menlo, Consolas, monospace; border: 1px solid var(--line); border-radius: 6px; padding: 8px; }
+#err { color: var(--bad); font-size: 13px; }
+#summary { border-left: 5px solid var(--mute); padding: 4px 12px; margin-bottom: 10px; }
+#summary.renew_ex_parte { border-color: var(--ok); }
+#summary.send_prefilled_form { border-color: var(--unk); }
+#summary.ce_noncompliance_notice, #summary.income_over_limit_check_other_bases { border-color: var(--bad); }
+#summary h2 { margin: 4px 0; font-size: 18px; }
+#summary p, #summary ul { margin: 4px 0; font-size: 13px; }
+#trace { list-style: none; padding: 0; margin: 0; }
+#trace li { border-top: 1px solid var(--line); padding: 7px 0 7px 22px; position: relative; font-size: 13px; }
+#trace li::before { position: absolute; left: 2px; top: 7px; font-weight: 700; }
+#trace li.met::before { content: "+"; color: var(--ok); }
+#trace li.not_met::before { content: "x"; color: var(--bad); }
+#trace li.unknown::before { content: "?"; color: var(--unk); }
+#trace li.skipped::before { content: "-"; color: var(--mute); }
+#trace b { font-weight: 600; }
+#trace q { display: block; color: var(--mute); font-style: italic; margin-top: 3px; quotes: "\201C" "\201D"; }
+footer a { color: inherit; }
+@media (max-width: 800px) { main { grid-template-columns: 1fr; } }
