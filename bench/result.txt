@@ -1,0 +1,4 @@
+synthetic population: 100000 expansion adults, renewal 2027-07-01, state requires 1 month
+assumptions: {"works80":0.55,"payrollCovers":0.7,"snapWorkRule":0.22,"tanfCompliant":0.03,"frail":0.12,"frailInClaims":0.6,"caretaker":0.15,"student":0.06,"incomeFresh":0.85}
+Medicaid-side data only    ex parte 44.8%  items asked per person 0.620  cross-program reuse 0.0%  29,604 decisions/s
+plus SNAP/TANF case data   ex parte 55.8%  items asked per person 0.497  cross-program reuse 21.8%  38,926 decisions/s
