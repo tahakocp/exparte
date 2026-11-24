@@ -1,0 +1,47 @@
+{
+  "id": "snap-member",
+  "state": "XX",
+  "asOf": "2027-07-01",
+  "lastRenewal": "2027-01-01",
+  "basis": "435.554(c)(7): SNAP household member subject to SNAP work rules, from the SNAP case",
+  "applicant": {
+    "id": "p-snap-member",
+    "evidence": [
+      {
+        "id": "e44",
+        "kind": "eligibility_group",
+        "value": "adult_viii",
+        "source": "eligibility_system",
+        "observed": "2026-12-15"
+      },
+      {
+        "id": "e45",
+        "kind": "birth_date",
+        "value": "1990-04-02",
+        "source": "ssa",
+        "observed": "2026-12-15"
+      },
+      {
+        "id": "e46",
+        "kind": "household_size",
+        "value": 1,
+        "source": "eligibility_system",
+        "observed": "2027-06-01"
+      },
+      {
+        "id": "e47",
+        "kind": "monthly_magi_income",
+        "value": 1500,
+        "source": "swica",
+        "observed": "2027-06-10"
+      },
+      {
+        "id": "e43",
+        "kind": "snap_work_rule_member",
+        "value": true,
+        "source": "snap_case",
+        "observed": "2027-06-20"
+      }
+    ]
+  }
+}

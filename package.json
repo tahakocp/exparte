@@ -10,7 +10,8 @@
     "build": "tsc -p .",
     "test": "tsc -p . && node --test dist/test/*.test.js",
     "bench": "node dist/bench/simulate.js",
-    "site": "node scripts/site.mjs"
+    "site": "node scripts/site.mjs",
+    "prepare": "tsc -p ."
   },
   "keywords": [
     "medicaid",
@@ -34,7 +35,7 @@
   "files": [
     "dist/src",
     "sources",
-    "fixtures",
+    "fixtures", "examples",
     "README.md",
     "LICENSE"
   ],
