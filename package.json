@@ -1,0 +1,48 @@
+{
+  "name": "exparte",
+  "version": "0.1.0",
+  "description": "Medicaid renewal and community engagement decisions from data the agency already has, with every step tied to the exact regulation text.",
+  "main": "dist/src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "tsc -p . && node --test dist/test/*.test.js",
+    "bench": "node dist/bench/simulate.js",
+    "site": "node scripts/site.mjs"
+  },
+  "keywords": [
+    "medicaid",
+    "rules-as-code",
+    "eligibility",
+    "benefits",
+    "civic-tech",
+    "government"
+  ],
+  "author": "tahakocp",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^5.9.3"
+  },
+  "types": "dist/src/index.d.ts",
+  "bin": {
+    "exparte": "dist/src/cli.js"
+  },
+  "files": [
+    "dist/src",
+    "sources",
+    "fixtures",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tahakocp/exparte.git"
+  }
+}

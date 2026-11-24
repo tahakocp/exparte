@@ -1,0 +1,1247 @@
+[
+  {
+    "id": "work-90h",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "435.552(a)(1): 90 payroll hours in one month",
+    "expect": {
+      "outcome": "renew_ex_parte",
+      "ceStatus": "met",
+      "period": 6
+    },
+    "applicant": {
+      "id": "p-work-90h",
+      "evidence": [
+        {
+          "id": "e2",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e3",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e4",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e5",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-06-10"
+        },
+        {
+          "id": "e1",
+          "kind": "work_hours",
+          "value": 90,
+          "source": "payroll",
+          "observed": "2027-06-05",
+          "month": "2027-05"
+        }
+      ]
+    }
+  },
+  {
+    "id": "income-floor",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "435.552(a)(6): $600 earnings >= $7.25 x 80 = $580",
+    "expect": {
+      "outcome": "renew_ex_parte",
+      "ceStatus": "met"
+    },
+    "applicant": {
+      "id": "p-income-floor",
+      "evidence": [
+        {
+          "id": "e7",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e8",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e9",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e10",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-06-10"
+        },
+        {
+          "id": "e6",
+          "kind": "monthly_earnings",
+          "value": 600,
+          "source": "swica",
+          "observed": "2027-06-10",
+          "month": "2027-05"
+        }
+      ]
+    }
+  },
+  {
+    "id": "income-below-floor",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "435.552(a)(6) not met at $579, no other data: ask for one month",
+    "expect": {
+      "outcome": "send_prefilled_form",
+      "requests": 1
+    },
+    "applicant": {
+      "id": "p-income-below-floor",
+      "evidence": [
+        {
+          "id": "e12",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e13",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e14",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e15",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-06-10"
+        },
+        {
+          "id": "e11",
+          "kind": "monthly_earnings",
+          "value": 579,
+          "source": "swica",
+          "observed": "2027-06-10",
+          "month": "2027-05"
+        }
+      ]
+    }
+  },
+  {
+    "id": "combo-50-30",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "435.552(a)(5): 50 work hours + 30 community service hours",
+    "expect": {
+      "outcome": "renew_ex_parte",
+      "ceStatus": "met"
+    },
+    "applicant": {
+      "id": "p-combo-50-30",
+      "evidence": [
+        {
+          "id": "e18",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e19",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e20",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e21",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-06-10"
+        },
+        {
+          "id": "e16",
+          "kind": "work_hours",
+          "value": 50,
+          "source": "payroll",
+          "observed": "2027-06-05",
+          "month": "2027-04"
+        },
+        {
+          "id": "e17",
+          "kind": "community_service_hours",
+          "value": 30,
+          "source": "eligibility_system",
+          "observed": "2027-05-02",
+          "month": "2027-04"
+        }
+      ]
+    }
+  },
+  {
+    "id": "student",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "435.552(a)(4): half-time enrollment from school records",
+    "expect": {
+      "outcome": "renew_ex_parte",
+      "ceStatus": "met"
+    },
+    "applicant": {
+      "id": "p-student",
+      "evidence": [
+        {
+          "id": "e23",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e24",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e25",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e26",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-06-10"
+        },
+        {
+          "id": "e22",
+          "kind": "education_half_time",
+          "value": true,
+          "source": "school_records",
+          "observed": "2027-03-01",
+          "month": "2027-02"
+        }
+      ]
+    }
+  },
+  {
+    "id": "seasonal",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-06-01",
+    "basis": "435.552(a)(7): seasonal worker, 6-month average $700, current month $0",
+    "expect": {
+      "outcome": "renew_ex_parte",
+      "ceStatus": "met"
+    },
+    "applicant": {
+      "id": "p-seasonal",
+      "evidence": [
+        {
+          "id": "e39",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e40",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e41",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e42",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-06-10"
+        },
+        {
+          "id": "e27",
+          "kind": "seasonal_worker",
+          "value": true,
+          "source": "state_ui",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e28",
+          "kind": "monthly_earnings",
+          "value": 1400,
+          "source": "swica",
+          "observed": "2027-06-10",
+          "month": "2027-01"
+        },
+        {
+          "id": "e29",
+          "kind": "monthly_earnings",
+          "value": 1400,
+          "source": "swica",
+          "observed": "2027-06-10",
+          "month": "2027-02"
+        },
+        {
+          "id": "e30",
+          "kind": "monthly_earnings",
+          "value": 600,
+          "source": "swica",
+          "observed": "2027-06-10",
+          "month": "2027-03"
+        },
+        {
+          "id": "e31",
+          "kind": "monthly_earnings",
+          "value": 400,
+          "source": "swica",
+          "observed": "2027-06-10",
+          "month": "2027-04"
+        },
+        {
+          "id": "e32",
+          "kind": "monthly_earnings",
+          "value": 0,
+          "source": "swica",
+          "observed": "2027-06-10",
+          "month": "2027-05"
+        },
+        {
+          "id": "e33",
+          "kind": "monthly_earnings",
+          "value": 400,
+          "source": "swica",
+          "observed": "2027-06-10",
+          "month": "2026-12"
+        },
+        {
+          "id": "e34",
+          "kind": "monthly_earnings",
+          "value": 0,
+          "source": "swica",
+          "observed": "2027-06-10",
+          "month": "2027-06"
+        },
+        {
+          "id": "e35",
+          "kind": "work_hours",
+          "value": 0,
+          "source": "payroll",
+          "observed": "2027-06-10",
+          "month": "2027-06"
+        },
+        {
+          "id": "e36",
+          "kind": "community_service_hours",
+          "value": 0,
+          "source": "eligibility_system",
+          "observed": "2027-06-10",
+          "month": "2027-06"
+        },
+        {
+          "id": "e37",
+          "kind": "work_program_hours",
+          "value": 0,
+          "source": "state_ui",
+          "observed": "2027-06-10",
+          "month": "2027-06"
+        },
+        {
+          "id": "e38",
+          "kind": "education_half_time",
+          "value": false,
+          "source": "school_records",
+          "observed": "2027-06-10",
+          "month": "2027-06"
+        }
+      ]
+    }
+  },
+  {
+    "id": "snap-member",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "435.554(c)(7): SNAP household member subject to SNAP work rules, from the SNAP case",
+    "expect": {
+      "outcome": "renew_ex_parte",
+      "ceStatus": "excluded"
+    },
+    "applicant": {
+      "id": "p-snap-member",
+      "evidence": [
+        {
+          "id": "e44",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e45",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e46",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e47",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-06-10"
+        },
+        {
+          "id": "e43",
+          "kind": "snap_work_rule_member",
+          "value": true,
+          "source": "snap_case",
+          "observed": "2027-06-20"
+        }
+      ]
+    }
+  },
+  {
+    "id": "snap-stale",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "same SNAP fact, 200 days old (state window 60 days): not reused, ask",
+    "expect": {
+      "outcome": "send_prefilled_form",
+      "ceStatus": "unverified"
+    },
+    "applicant": {
+      "id": "p-snap-stale",
+      "evidence": [
+        {
+          "id": "e49",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e50",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e51",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e52",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-06-10"
+        },
+        {
+          "id": "e48",
+          "kind": "snap_work_rule_member",
+          "value": true,
+          "source": "snap_case",
+          "observed": "2026-12-13"
+        }
+      ]
+    }
+  },
+  {
+    "id": "frail-self",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "435.557(b)(2): medically frail may be self-attested",
+    "expect": {
+      "outcome": "renew_ex_parte",
+      "ceStatus": "excluded"
+    },
+    "applicant": {
+      "id": "p-frail-self",
+      "evidence": [
+        {
+          "id": "e54",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e55",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e56",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e57",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-06-10"
+        },
+        {
+          "id": "e53",
+          "kind": "medically_frail",
+          "value": true,
+          "source": "self_attested",
+          "observed": "2027-06-15"
+        }
+      ]
+    }
+  },
+  {
+    "id": "work-self",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "self-attested work hours are not reliable information: ask for documentation",
+    "expect": {
+      "outcome": "send_prefilled_form"
+    },
+    "applicant": {
+      "id": "p-work-self",
+      "evidence": [
+        {
+          "id": "e59",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e60",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e61",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e62",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-06-10"
+        },
+        {
+          "id": "e58",
+          "kind": "work_hours",
+          "value": 120,
+          "source": "self_attested",
+          "observed": "2027-06-15",
+          "month": "2027-05"
+        }
+      ]
+    }
+  },
+  {
+    "id": "indian",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "SSA 1902(e)(14)(L)(ii) + 435.554(c)(2): 12-month period, excluded",
+    "expect": {
+      "outcome": "renew_ex_parte",
+      "ceStatus": "excluded",
+      "period": 12
+    },
+    "applicant": {
+      "id": "p-indian",
+      "evidence": [
+        {
+          "id": "e64",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e65",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e66",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e67",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-06-10"
+        },
+        {
+          "id": "e63",
+          "kind": "indian_status",
+          "value": true,
+          "source": "ihs",
+          "observed": "2027-02-01"
+        }
+      ]
+    }
+  },
+  {
+    "id": "released",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "435.553(b): released from jail in April; May deemed",
+    "expect": {
+      "outcome": "renew_ex_parte",
+      "ceStatus": "deemed"
+    },
+    "applicant": {
+      "id": "p-released",
+      "evidence": [
+        {
+          "id": "e69",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e70",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e71",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e72",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-06-10"
+        },
+        {
+          "id": "e68",
+          "kind": "incarcerated",
+          "value": true,
+          "source": "corrections",
+          "observed": "2027-05-01",
+          "month": "2027-04"
+        }
+      ]
+    }
+  },
+  {
+    "id": "over-income",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "435.119(b)(5) + 435.603(d)(4): $2,000/month, 1 person, limit $1,835.40",
+    "expect": {
+      "outcome": "income_over_limit_check_other_bases"
+    },
+    "applicant": {
+      "id": "p-over-income",
+      "evidence": [
+        {
+          "id": "e74",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e75",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e76",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e77",
+          "kind": "monthly_magi_income",
+          "value": 2000,
+          "source": "swica",
+          "observed": "2027-06-10"
+        },
+        {
+          "id": "e73",
+          "kind": "work_hours",
+          "value": 160,
+          "source": "payroll",
+          "observed": "2027-06-05",
+          "month": "2027-05"
+        }
+      ]
+    }
+  },
+  {
+    "id": "income-stale",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "income 120 days old (state window 90): ask for income only",
+    "expect": {
+      "outcome": "send_prefilled_form",
+      "requests": 1
+    },
+    "applicant": {
+      "id": "p-income-stale",
+      "evidence": [
+        {
+          "id": "e79",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e80",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e81",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e82",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-03-03"
+        },
+        {
+          "id": "e78",
+          "kind": "work_hours",
+          "value": 90,
+          "source": "payroll",
+          "observed": "2027-06-05",
+          "month": "2027-05"
+        }
+      ]
+    }
+  },
+  {
+    "id": "all-zero",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "435.558: every activity type on file at 0 for all months: noncompliance notice, 30 days",
+    "expect": {
+      "outcome": "ce_noncompliance_notice",
+      "ceStatus": "unverified"
+    },
+    "applicant": {
+      "id": "p-all-zero",
+      "evidence": [
+        {
+          "id": "e113",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e114",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e115",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e116",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-06-10"
+        },
+        {
+          "id": "e83",
+          "kind": "work_hours",
+          "value": 0,
+          "source": "payroll",
+          "observed": "2027-06-10",
+          "month": "2027-01"
+        },
+        {
+          "id": "e84",
+          "kind": "monthly_earnings",
+          "value": 0,
+          "source": "swica",
+          "observed": "2027-06-10",
+          "month": "2027-01"
+        },
+        {
+          "id": "e85",
+          "kind": "community_service_hours",
+          "value": 0,
+          "source": "eligibility_system",
+          "observed": "2027-06-10",
+          "month": "2027-01"
+        },
+        {
+          "id": "e86",
+          "kind": "work_program_hours",
+          "value": 0,
+          "source": "state_ui",
+          "observed": "2027-06-10",
+          "month": "2027-01"
+        },
+        {
+          "id": "e87",
+          "kind": "education_half_time",
+          "value": false,
+          "source": "school_records",
+          "observed": "2027-06-10",
+          "month": "2027-01"
+        },
+        {
+          "id": "e88",
+          "kind": "work_hours",
+          "value": 0,
+          "source": "payroll",
+          "observed": "2027-06-10",
+          "month": "2027-02"
+        },
+        {
+          "id": "e89",
+          "kind": "monthly_earnings",
+          "value": 0,
+          "source": "swica",
+          "observed": "2027-06-10",
+          "month": "2027-02"
+        },
+        {
+          "id": "e90",
+          "kind": "community_service_hours",
+          "value": 0,
+          "source": "eligibility_system",
+          "observed": "2027-06-10",
+          "month": "2027-02"
+        },
+        {
+          "id": "e91",
+          "kind": "work_program_hours",
+          "value": 0,
+          "source": "state_ui",
+          "observed": "2027-06-10",
+          "month": "2027-02"
+        },
+        {
+          "id": "e92",
+          "kind": "education_half_time",
+          "value": false,
+          "source": "school_records",
+          "observed": "2027-06-10",
+          "month": "2027-02"
+        },
+        {
+          "id": "e93",
+          "kind": "work_hours",
+          "value": 0,
+          "source": "payroll",
+          "observed": "2027-06-10",
+          "month": "2027-03"
+        },
+        {
+          "id": "e94",
+          "kind": "monthly_earnings",
+          "value": 0,
+          "source": "swica",
+          "observed": "2027-06-10",
+          "month": "2027-03"
+        },
+        {
+          "id": "e95",
+          "kind": "community_service_hours",
+          "value": 0,
+          "source": "eligibility_system",
+          "observed": "2027-06-10",
+          "month": "2027-03"
+        },
+        {
+          "id": "e96",
+          "kind": "work_program_hours",
+          "value": 0,
+          "source": "state_ui",
+          "observed": "2027-06-10",
+          "month": "2027-03"
+        },
+        {
+          "id": "e97",
+          "kind": "education_half_time",
+          "value": false,
+          "source": "school_records",
+          "observed": "2027-06-10",
+          "month": "2027-03"
+        },
+        {
+          "id": "e98",
+          "kind": "work_hours",
+          "value": 0,
+          "source": "payroll",
+          "observed": "2027-06-10",
+          "month": "2027-04"
+        },
+        {
+          "id": "e99",
+          "kind": "monthly_earnings",
+          "value": 0,
+          "source": "swica",
+          "observed": "2027-06-10",
+          "month": "2027-04"
+        },
+        {
+          "id": "e100",
+          "kind": "community_service_hours",
+          "value": 0,
+          "source": "eligibility_system",
+          "observed": "2027-06-10",
+          "month": "2027-04"
+        },
+        {
+          "id": "e101",
+          "kind": "work_program_hours",
+          "value": 0,
+          "source": "state_ui",
+          "observed": "2027-06-10",
+          "month": "2027-04"
+        },
+        {
+          "id": "e102",
+          "kind": "education_half_time",
+          "value": false,
+          "source": "school_records",
+          "observed": "2027-06-10",
+          "month": "2027-04"
+        },
+        {
+          "id": "e103",
+          "kind": "work_hours",
+          "value": 0,
+          "source": "payroll",
+          "observed": "2027-06-10",
+          "month": "2027-05"
+        },
+        {
+          "id": "e104",
+          "kind": "monthly_earnings",
+          "value": 0,
+          "source": "swica",
+          "observed": "2027-06-10",
+          "month": "2027-05"
+        },
+        {
+          "id": "e105",
+          "kind": "community_service_hours",
+          "value": 0,
+          "source": "eligibility_system",
+          "observed": "2027-06-10",
+          "month": "2027-05"
+        },
+        {
+          "id": "e106",
+          "kind": "work_program_hours",
+          "value": 0,
+          "source": "state_ui",
+          "observed": "2027-06-10",
+          "month": "2027-05"
+        },
+        {
+          "id": "e107",
+          "kind": "education_half_time",
+          "value": false,
+          "source": "school_records",
+          "observed": "2027-06-10",
+          "month": "2027-05"
+        },
+        {
+          "id": "e108",
+          "kind": "work_hours",
+          "value": 0,
+          "source": "payroll",
+          "observed": "2027-06-10",
+          "month": "2027-06"
+        },
+        {
+          "id": "e109",
+          "kind": "monthly_earnings",
+          "value": 0,
+          "source": "swica",
+          "observed": "2027-06-10",
+          "month": "2027-06"
+        },
+        {
+          "id": "e110",
+          "kind": "community_service_hours",
+          "value": 0,
+          "source": "eligibility_system",
+          "observed": "2027-06-10",
+          "month": "2027-06"
+        },
+        {
+          "id": "e111",
+          "kind": "work_program_hours",
+          "value": 0,
+          "source": "state_ui",
+          "observed": "2027-06-10",
+          "month": "2027-06"
+        },
+        {
+          "id": "e112",
+          "kind": "education_half_time",
+          "value": false,
+          "source": "school_records",
+          "observed": "2027-06-10",
+          "month": "2027-06"
+        }
+      ]
+    }
+  },
+  {
+    "id": "before-2027",
+    "state": "XX",
+    "asOf": "2026-11-02",
+    "lastRenewal": "2025-11-01",
+    "basis": "renewal in Nov 2026: 12 months, no community engagement yet",
+    "expect": {
+      "outcome": "renew_ex_parte",
+      "ceStatus": "not_in_effect",
+      "period": 12
+    },
+    "applicant": {
+      "id": "p-before-2027",
+      "evidence": [
+        {
+          "id": "e117",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-10-01"
+        },
+        {
+          "id": "e118",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-10-01"
+        },
+        {
+          "id": "e119",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2026-10-01"
+        },
+        {
+          "id": "e120",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2026-10-01"
+        }
+      ]
+    }
+  },
+  {
+    "id": "parent-group",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "parent/caretaker group, not expansion adult: 12 months, CE n/a",
+    "expect": {
+      "outcome": "renew_ex_parte",
+      "ceStatus": "not_applicable",
+      "period": 12
+    },
+    "applicant": {
+      "id": "p-parent-group",
+      "evidence": [
+        {
+          "id": "e121",
+          "kind": "eligibility_group",
+          "value": "parent_caretaker",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e122",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e123",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e124",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-06-10"
+        }
+      ]
+    }
+  },
+  {
+    "id": "disaster",
+    "state": "XX",
+    "asOf": "2027-07-01",
+    "lastRenewal": "2027-01-01",
+    "basis": "435.555 hardship option: county under a disaster declaration in June",
+    "expect": {
+      "outcome": "renew_ex_parte",
+      "ceStatus": "deemed"
+    },
+    "applicant": {
+      "id": "p-disaster",
+      "evidence": [
+        {
+          "id": "e126",
+          "kind": "eligibility_group",
+          "value": "adult_viii",
+          "source": "eligibility_system",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e127",
+          "kind": "birth_date",
+          "value": "1990-04-02",
+          "source": "ssa",
+          "observed": "2026-12-15"
+        },
+        {
+          "id": "e128",
+          "kind": "household_size",
+          "value": 1,
+          "source": "eligibility_system",
+          "observed": "2027-06-01"
+        },
+        {
+          "id": "e129",
+          "kind": "monthly_magi_income",
+          "value": 1500,
+          "source": "swica",
+          "observed": "2027-06-10"
+        },
+        {
+          "id": "e125",
+          "kind": "disaster_county",
+          "value": true,
+          "source": "fema",
+          "observed": "2027-06-03",
+          "month": "2027-06"
+        }
+      ]
+    }
+  }
+]
