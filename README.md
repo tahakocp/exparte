@@ -60,7 +60,7 @@ The engine then:
 
 | What | Result |
 |---|---|
-| Test cases, each built from one clause | 18 fixtures + 4 property tests, all passing on Node 20, 22, 24 |
+| Test cases, each built from one clause | 18 fixtures + 4 other tests (quote check, source hashes, reachability, request count), all passing on Node 20, 22, 24 |
 | Rules with a verbatim quote checked against the pinned text | 44 / 44 |
 | Engine speed, synthetic population, 1 core of a Xeon VM | about 30,000-39,000 decisions/s |
 | Browser bundle | 33 KB of JavaScript, no dependencies |
