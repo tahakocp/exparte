@@ -1,0 +1,33 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [20, 22, 24]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm ci
+      - run: npm test
+      - name: cli runs on the fixtures
+        run: node dist/src/cli.js fixtures/cases.json --no-quotes > /dev/null
+      - name: simulation (10k synthetic cases)
+        run: node dist/bench/simulate.js 10000
+
+  sources:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: pinned sources unchanged
+        run: cd sources && sha256sum -c SHA256SUMS
